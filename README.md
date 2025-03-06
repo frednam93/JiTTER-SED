@@ -47,6 +47,16 @@ If this repository helped your works, please cite papers below! 3rd paper is abo
         journal={arXiv preprint arXiv:2502.20857},
 }
 
+@inproceedings{cai24_interspeech,
+  title     = {MAT-SED: A Masked Audio Transformer with Masked-Reconstruction Based Pre-training for Sound Event Detection},
+  author    = {Pengfei Cai and Yan Song and Kang Li and Haoyu Song and Ian McLoughlin},
+  year      = {2024},
+  booktitle = {Interspeech 2024},
+  pages     = {557--561},
+  doi       = {10.21437/Interspeech.2024-714},
+  issn      = {2958-1796},
+}
+
 @inproceedings{nam2024dcase,
         title={Self Training and Ensembling Frequency Dependent Networks with Coarse Prediction Pooling and Sound Event Bounding Boxes}, 
         author={Hyeonuk Nam and Deokki Min and Seungdeok Choi and Inhan Choi and Yong-Hwa Park},
