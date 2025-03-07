@@ -94,7 +94,17 @@ class MLMTrainer(Trainer):
                 pred, other_dict = self.net(mel, encoder_win=self.config["training"]["encoder_win"])
                 frame_before_mask = other_dict["frame_before_mask"]
                 mask_id_seq = other_dict["mask_id_seq"]
-                loss = self.reconstruction_loss(frame_before_mask[mask_id_seq], pred[mask_id_seq])
+                if self.config["training"]["train_maskid"]:
+                    loss = self.reconstruction_loss(frame_before_mask[mask_id_seq], pred[mask_id_seq])
+                else:
+                    loss = self.reconstruction_loss(frame_before_mask, pred)
+                if self.net.mlm_tool.multitask:
+                    mt_pred = other_dict["multitask_pred"]
+                    mt_mask = other_dict["multitask_mask"]
+                    if self.config["training"]["train_maskid"]:
+                        loss += self.reconstruction_loss(frame_before_mask[mt_mask], mt_pred[mt_mask])
+                    else:
+                        loss += self.reconstruction_loss(frame_before_mask, mt_pred)
                 mean_loss += loss.item() / n_valid
 
         self.logger.info("Epoch {0}: Validation reconstruction loss is {1:.4f}".format(epoch, loss))
