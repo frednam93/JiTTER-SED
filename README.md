@@ -5,6 +5,13 @@ by Hyeonuk Nam, Yong-Hwa Park <br>
 [![arXiv](https://img.shields.io/badge/arXiv-2502.20857-brightgreen)](https://arxiv.org/abs/2502.20857)<br>
 
 
+## JiTTER
+<img src=./archive/img/jitter.png align="left" height="270" width="395"> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+
+JiTTER (Jigsaw Temporal Transformer for Event Reconstruction) is a self-supervised learning framework for Sound Event Detection (SED) that enforces explicit temporal order reconstruction. It introduces a Hierarchical Temporal Shuffle strategy, combining block-level and frame-level shuffling to enhance both global event structure modeling and transient event detection. JiTTER achieves a 5.89% PSDS improvement over MAT-SED on the DESED dataset, demonstrating its effectiveness in structured SSL pretraining for SED.
+
+
+
 ## Datasets
 You can download datasets by reffering to [DCASE 2021 Task 4 description page](http://dcase.community/challenge2021/task-sound-event-detection-and-separation-in-domestic-environments) or [DCASE 2021 Task 4 baseline](https://github.com/DCASE-REPO/DESED_task). You need DESED real datasets and DESED synthetic datasets.
 
