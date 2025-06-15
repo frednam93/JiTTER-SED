@@ -45,7 +45,7 @@ cd  ./exps/mat-sed/base
 - [Transformers4SED](github.com/cai525/Transformer4SED)
 
 ## Citation & Contact
-If this repository helped your works, please cite papers below! 3rd paper is about data augmentation method called FilterAugment which is applied to this work.
+If this repository helped your works, please cite papers below!
 ```bib
 @article{nam2025jitter,
         title={JiTTER: Jigsaw Temporal Transformer for Event Reconstruction for Self-Supervised Sound Event Detection}, 
@@ -62,46 +62,6 @@ If this repository helped your works, please cite papers below! 3rd paper is abo
   pages     = {557--561},
   doi       = {10.21437/Interspeech.2024-714},
   issn      = {2958-1796},
-}
-
-@inproceedings{nam2024dcase,
-        title={Self Training and Ensembling Frequency Dependent Networks with Coarse Prediction Pooling and Sound Event Bounding Boxes}, 
-        author={Hyeonuk Nam and Deokki Min and Seungdeok Choi and Inhan Choi and Yong-Hwa Park},
-        year={2024},
-        booktitle = "{DCASE Workshop}",
-}
-
-@article{nam2024pushing,
-        title={Pushing the Limit of Sound Event Detection with Multi-Dilated Frequency Dynamic Convolution}, 
-        author={Hyeonuk Nam and Yong-Hwa Park},
-        year={2024},
-        journal={arXiv preprint arXiv:2406.13312},
-}
-
-@inproceedings{nam2024diversifying,
-        title={Diversifying and Expanding Frequency-Adaptive Convolution Kernels for Sound Event Detection}, 
-        author={Hyeonuk Nam and Seong-Hu Kim and Deokki Min and Junhyeok Lee and Yong-Hwa Park},
-        year={2024},
-        booktitle={Proc. Interspeech 2024},
-}
-
-@inproceedings{Nam2023,
-        author = "Nam, Hyeonuk and Kim, Seong-Hu and Min, Deokki and Park, Yong-Hwa",
-        title = "Frequency \& Channel Attention for Computationally Efficient Sound Event Detection",
-        booktitle = "Proceedings of the 8th Detection and Classification of Acoustic Scenes and Events 2023 Workshop (DCASE2023)",
-        address = "Tampere, Finland",
-        month = "September",
-        year = "2023",
-        pages = "136--140",
-}
-
-@inproceedings{nam22_interspeech,
-        author={Hyeonuk Nam and Seong-Hu Kim and Byeong-Yun Ko and Yong-Hwa Park},
-        title={{Frequency Dynamic Convolution: Frequency-Adaptive Pattern Recognition for Sound Event Detection}},
-        year=2022,
-        booktitle={Proc. Interspeech 2022},
-        pages={2763--2767},
-        doi={10.21437/Interspeech.2022-10127}
 }
 
 @INPROCEEDINGS{nam2021filteraugment,
